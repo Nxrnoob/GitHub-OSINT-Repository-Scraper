@@ -24,7 +24,7 @@ Ensure you are using **Arch Linux** and have a virtual environment set up. Follo
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/osint-project.git
+git clone https://github.com/Nxrnoob/GitHub-OSINT-Repository-Scraper.git
 cd osint-project
 
 # Create a virtual environment
@@ -47,12 +47,6 @@ For more options:
 ```bash
 python main.py --help
 ```
-
-## 📑 Roadmap
-- [ ] Implement social media intelligence gathering
-- [ ] Improve visualization & reporting
-- [ ] Optimize for real-time monitoring
-- [ ] Write a detailed research paper based on findings
 
 ## 🛡️ Legal & Ethical Considerations
 This tool is **strictly for educational and research purposes**. Users are responsible for ensuring their activities comply with legal and ethical guidelines.

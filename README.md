@@ -1,55 +1,56 @@
 # OSINT Project
 
-Welcome to my **OSINT (Open-Source Intelligence) Project**! This repository contains tools, scripts, and research focused on gathering and analyzing publicly available information for intelligence purposes.
+A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the terminal.
 
-## 🚀 About the Project
-This project is designed to build a **live OSINT tool** that collects, processes, and visualizes data from open sources. The goal is to quickly develop a functional OSINT framework and later refine it into a **research paper** for a hackathon submission.
+## Features
 
-## ⚡ Features
-- **Automated Data Collection**: Gather intelligence from multiple sources (social media, websites, etc.).
-- **Data Processing**: Normalize and structure collected data for analysis.
-- **Visualization Tools**: Graphs, maps, and reports for better insights.
-- **Live Monitoring**: Track changes and updates in real-time.
-- **Privacy & Ethical OSINT**: Focus on legal and ethical data gathering practices.
+- **GitHub API Integration:** Fetches repositories using GitHub's API.
+- **CSV Data Export:** Saves raw data in `github_repos.csv` and cleans it in `github_repos_cleaned.csv`.
+- **Language Categorization:** Groups repositories by programming language. Repositories with no language specified are automatically classified under "Miscellaneous."
+- **Interactive Menu:** Browse repositories by selecting a programming language, view the list of repositories, and open any repository directly in your browser.
+- **OSINT Research:** Perfect for researchers and tech scouts looking to analyze trends in AI/ML projects on GitHub.
 
-## 🛠️ Tech Stack
-- **Programming Languages**: Python, Bash
-- **Frameworks & Tools**: Scrapy, BeautifulSoup, Selenium, OSINT-specific APIs (e.g., Shodan, Hunter.io)
-- **Database**: SQLite/PostgreSQL
-- **Visualization**: Matplotlib, Plotly, NetworkX
-- **Deployment**: Docker, Cloud-based infrastructure (if required)
 
 ## 📦 Installation
-Ensure you are using **Arch Linux** and have a virtual environment set up. Follow these steps:
 
 ```bash
 # Clone the repository
 git clone https://github.com/Nxrnoob/GitHub-OSINT-Repository-Scraper.git
-cd osint-project
+cd GitHub-OSINT-Repository-Scraper
 
-# Create a virtual environment
+# Create a virtual environment (not necessary but recommended)
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate    # Windows
 
 # Install dependencies
-pip install -r requirements.txt
+pip install requests
 ```
+Configure Your GitHub API Key
 
-## 🎯 Usage
-Run the OSINT tool using:
+The tool requires a GitHub API Key for fetching repositories.
+Get Your GitHub API Key:
+
+    Go to GitHub Developer Settings.
+    Generate a new token (classic) with repo read access.
+    Copy the token and replace "YOUR_GITHUB_API_KEY" in gitai.py:
+
+## Usage
+Simply run using:
 
 ```bash
-python main.py --target "example.com"
+python gitai.py
 ```
 
-For more options:
-```bash
-python main.py --help
-```
+The tool will:
 
-## 🛡️ Legal & Ethical Considerations
-This tool is **strictly for educational and research purposes**. Users are responsible for ensuring their activities comply with legal and ethical guidelines.
+    Fetch GitHub repositories based on your query.
+    Save the results to CSV files.
+    Display an interactive menu for browsing repositories by programming language.
+    Allow you to open any selected repository in your default web browser.
+## Demo image
+   ![demo](demo.png)
+
 
 ## 🤝 Contributing
 PRs are welcome! Feel free to open an issue for discussion.
@@ -58,6 +59,4 @@ PRs are welcome! Feel free to open an issue for discussion.
 This project is licensed under the **MIT License**.
 
 ---
-
-_"OSINT isn't just about data collection; it's about making sense of the chaos."_
 

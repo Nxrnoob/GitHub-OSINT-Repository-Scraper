@@ -51,10 +51,10 @@ The tool will:
    ![demo](demo.png)
 
 
-## 🤝 Contributing
+## Contributing
 PRs are welcome! Feel free to open an issue for discussion.
 
-## 📜 License
+## License
 This project is licensed under the **MIT License**.
 
 ---

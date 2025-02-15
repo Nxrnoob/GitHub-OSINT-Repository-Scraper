@@ -11,7 +11,7 @@ A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories b
 - **OSINT Research:** Perfect for researchers and tech scouts looking to analyze trends in AI/ML projects on GitHub.
 
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone the repository

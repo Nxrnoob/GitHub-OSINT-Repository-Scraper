@@ -1,29 +1,69 @@
-# GitHub OSINT Repository Scraper
+# OSINT Project
 
-![GitHub Repo](https://img.shields.io/github/stars/Nxrnoob/GitHub-OSINT-Repository-Scraper?style=social)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+Welcome to my **OSINT (Open-Source Intelligence) Project**! This repository contains tools, scripts, and research focused on gathering and analyzing publicly available information for intelligence purposes.
 
-A powerful OSINT (Open-Source Intelligence) tool that scrapes GitHub repositories based on specific AI/ML-related keywords. It sorts repositories by popularity (stars), filters them by programming language, and allows you to interactively browse and open repositories in your web browser—all from your terminal.
+## 🚀 About the Project
+This project is designed to build a **live OSINT tool** that collects, processes, and visualizes data from open sources. The goal is to quickly develop a functional OSINT framework and later refine it into a **research paper** for a hackathon submission.
 
----
+## ⚡ Features
+- **Automated Data Collection**: Gather intelligence from multiple sources (social media, websites, etc.).
+- **Data Processing**: Normalize and structure collected data for analysis.
+- **Visualization Tools**: Graphs, maps, and reports for better insights.
+- **Live Monitoring**: Track changes and updates in real-time.
+- **Privacy & Ethical OSINT**: Focus on legal and ethical data gathering practices.
 
-## Features
+## 🛠️ Tech Stack
+- **Programming Languages**: Python, Bash
+- **Frameworks & Tools**: Scrapy, BeautifulSoup, Selenium, OSINT-specific APIs (e.g., Shodan, Hunter.io)
+- **Database**: SQLite/PostgreSQL
+- **Visualization**: Matplotlib, Plotly, NetworkX
+- **Deployment**: Docker, Cloud-based infrastructure (if required)
 
-- **GitHub API Integration:** Fetches repositories using GitHub's API.
-- **CSV Data Export:** Saves raw data in `github_repos.csv` and cleans it in `github_repos_cleaned.csv`.
-- **Language Categorization:** Groups repositories by programming language. Repositories with no language specified are automatically classified under "Miscellaneous."
-- **Interactive Menu:** Browse repositories by selecting a programming language, view the list of repositories, and open any repository directly in your browser.
-- **OSINT Research:** Perfect for researchers and tech scouts looking to analyze trends in AI/ML projects on GitHub.
+## 📦 Installation
+Ensure you are using **Arch Linux** and have a virtual environment set up. Follow these steps:
 
----
-
-## Installation
-
-### 1. Clone the Repository
-
-Open your terminal and run:
 ```bash
-git clone https://github.com/Nxrnoob/GitHub-OSINT-Repository-Scraper.git
-cd GitHub-OSINT-Repository-Scraper
+# Clone the repository
+git clone https://github.com/yourusername/osint-project.git
+cd osint-project
 
-### 2. Create a Virtual Environment (Recommended)
+# Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate    # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## 🎯 Usage
+Run the OSINT tool using:
+
+```bash
+python main.py --target "example.com"
+```
+
+For more options:
+```bash
+python main.py --help
+```
+
+## 📑 Roadmap
+- [ ] Implement social media intelligence gathering
+- [ ] Improve visualization & reporting
+- [ ] Optimize for real-time monitoring
+- [ ] Write a detailed research paper based on findings
+
+## 🛡️ Legal & Ethical Considerations
+This tool is **strictly for educational and research purposes**. Users are responsible for ensuring their activities comply with legal and ethical guidelines.
+
+## 🤝 Contributing
+PRs are welcome! Feel free to open an issue for discussion.
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+_"OSINT isn't just about data collection; it's about making sense of the chaos."_
+

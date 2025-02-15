@@ -1,4 +1,4 @@
-# OSINT Project
+# GitHub-OSINT-Repository-Scraper
 
 A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the terminal.
 
@@ -43,11 +43,10 @@ python gitai.py
 ```
 
 The tool will:
-
-    Fetch GitHub repositories based on your query.
-    Save the results to CSV files.
-    Display an interactive menu for browsing repositories by programming language.
-    Allow you to open any selected repository in your default web browser.
+- Fetch GitHub repositories based on your query.
+- Save the results to CSV files.
+- Display an interactive menu for browsing repositories by programming language.
+- Allow you to open any selected repository in your default web browser.
 ## Demo image
    ![demo](demo.png)
 
